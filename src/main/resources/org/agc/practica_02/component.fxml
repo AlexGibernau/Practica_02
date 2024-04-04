@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.agc.practica_02.ComponentController">
+   <VBox alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+         <Label text="Nombre:" textAlignment="JUSTIFY" />
+          <TextField fx:id="name" maxWidth="200.0" promptText="nombre" />
+         <Separator opacity="0.0" orientation="VERTICAL" />
+         <Label text="Apellido:" />
+          <TextField fx:id="surname" maxWidth="200.0" promptText="Apellido" />
+         <Separator opacity="0.0" orientation="VERTICAL" />
+         <Label text="Multiplicador:" />
+          <TextField fx:id="multiply" maxWidth="200.0" promptText="Multiplicador" />
+         <Separator opacity="0.0" orientation="VERTICAL" />
+          <Button fx:id="random" mnemonicParsing="false" onAction="#setRandomNumber" text="Random" textAlignment="CENTER" />
+      </children>
+   </VBox>
+</AnchorPane>

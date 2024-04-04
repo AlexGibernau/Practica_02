@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="247.0" prefWidth="205.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.agc.practica_02.MainViewController">
+    <VBox alignment="CENTER" prefWidth="258.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <fx:include fx:id="component" source="component.fxml" />
+        <Label fx:id="dniText" />
+        <Separator opacity="0.0" orientation="VERTICAL" prefHeight="13.0" prefWidth="6.0" />
+        <HBox alignment="CENTER" maxWidth="273.0" prefHeight="26.0" prefWidth="273.0">
+            <Button onAction="#generateDni" text="Generar" />
+            <Separator opacity="0.0" prefWidth="10.0" />
+            <Button mnemonicParsing="false" onAction="#eraseLabel" text="Borrar" />
+         <Separator opacity="0.0" prefWidth="10.0" />
+         <Button mnemonicParsing="false" onAction="#eraseAll" text="Borrar todo" />
+        </HBox>
+    </VBox>
+</AnchorPane>
